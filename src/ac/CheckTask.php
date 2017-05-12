@@ -31,7 +31,7 @@
 					$this->instance->point[$key]["distance"] += (float) 1;
 					if((float) $this->instance->point[$key]["distance"] > (float) 3){
 						if($player instanceof Player){
-							$player->kick(TextFormat::RED."#HACK Speed");
+							$player->kick(TextFormat::RED."ตรวจพบการกระทำที่ผิดต่อตัวเซิฟเวอร์ (#Speed Hack)");
 						}
 					}
 				} else {
@@ -41,7 +41,7 @@
 					$this->instance->point[$key]["fly"] += (float) 1;
 					if((float) $this->instance->point[$key]["fly"] > (float) 3){
 						if($player instanceof Player){
-							$player->kick(TextFormat::RED."#HACK Fly");
+							$player->kick(TextFormat::RED."ตรวจพบการกระทำที่ผิดต่อตัวเซิฟเวอร์ (#Fly Hack)");
 						}
 					}
 				} else {
